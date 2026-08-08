@@ -59,6 +59,7 @@ async def scrape_competitors():
         # 구글 시트(Apps Script)로 데이터 전송
         if collected_data:
             print(f"총 {len(collected_data)}건의 데이터를 구글 시트로 전송합니다.")
-            requests.post(GAS_WEBHOOK_URL, json=collected_data)
+         response = requests.post(GAS_WEBHOOK_URL, json=collected_data, allow_redirects=True, timeout=10)
+print(f"전송 결과 응답코드: {response.status_code}")
 
 asyncio.run(scrape_competitors())
