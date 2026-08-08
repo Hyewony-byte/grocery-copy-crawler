@@ -4,7 +4,7 @@ import requests
 from playwright.async_api import async_playwright
 
 # ⚠️ 본인의 구글 Apps Script 웹앱 배포 URL로 변경해 주세요
-GAS_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbwjlkBPkaf4D4CWlngz2lwaHJCwHFMMCq-xiIX6Ls9Cfs5Ea2ElSDGlhANxFdTwEGODlw/exec"
+GAS_WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbyXhkpHpPzXIlbEH7N5mA0DztnHswmO74OTZm50CGW3Q807DLqZuKLZTRttzxiiTI7l6Q/exec"
 
 async def scrape_competitors():
     collected_data = []
